@@ -61,9 +61,11 @@ dnf5 remove -y \
   kde-cli-tools \
   xdg-desktop-portal-kde
 
+dnf5 install -y sddm
+
 dnf5 -y copr disable lionheartp/Hyprland
 dnf5 -y copr disable erikreider/SwayNotificationCenter
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+systemctl enable podman.socket sddm.service
