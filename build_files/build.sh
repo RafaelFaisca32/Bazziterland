@@ -19,6 +19,40 @@ dnf5 install -y tmux
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+dnf5 -y copr enable lionheartp/Hyprland
+dnf5 -y copr enable erikreider/SwayNotificationCenter
+
+dnf5 install -y \
+  aquamarine \
+  gnome-keyring \
+  fuzzel \
+  hyprcursor \
+  hyprgraphics \
+  hypridle \
+  hyprland \
+  hyprland-guiutils \
+  hyprland-qt-support \
+  hyprlang \
+  hyprlock \
+  hyprpaper \
+  hyprpicker \
+  hyprpolkitagent \
+  hyprpwcenter \
+  hyprqt6engine \
+  hyprshutdown \
+  hyprsunset \
+  hyprsysteminfo \
+  hyprtoolkit \
+  hyprutils \
+  hyprwayland-scanner \
+  seahorse \
+  SwayNotificationCenter \
+  xdg-desktop-portal-hyprland \
+  waybar wl-clipboard wofi
+
+dnf5 -y copr disable lionheartp/Hyprland
+dnf5 -y copr disable erikreider/SwayNotificationCenter
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
