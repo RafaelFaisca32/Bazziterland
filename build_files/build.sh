@@ -62,6 +62,7 @@ dnf5 remove -y \
   xdg-desktop-portal-kde
 
 dnf5 install -y sddm
+dnf5 install -y sddm-breeze
 dnf5 install -y qt6-qtwayland
 
 dnf5 -y copr disable lionheartp/Hyprland
