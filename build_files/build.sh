@@ -59,14 +59,11 @@ dnf5 remove -y \
   kwin-wayland \
   systemsettings \
   kde-cli-tools \
-  xdg-desktop-portal-kde \
-  sddm-wayland-plasmagi
+  xdg-desktop-portal-kde
 
 dnf5 -y copr disable lionheartp/Hyprland
 dnf5 -y copr disable erikreider/SwayNotificationCenter
 
-dnf5 install -y sddm
-
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket sddm.service
+systemctl enable podman.socket
