@@ -50,6 +50,18 @@ dnf5 install -y \
   xdg-desktop-portal-hyprland \
   waybar wl-clipboard wofi
 
+dnf5 remove -y \
+  plasma-desktop \
+  plasma-workspace \
+  plasma-workspace-wayland \
+  plasmashell \
+  kwin \
+  kwin-wayland \
+  systemsettings \
+  kde-cli-tools \
+  xdg-desktop-portal-kde \
+  sddm-wayland-plasmagi
+
 dnf5 -y copr disable lionheartp/Hyprland
 dnf5 -y copr disable erikreider/SwayNotificationCenter
 
