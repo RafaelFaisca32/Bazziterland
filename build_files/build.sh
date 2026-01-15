@@ -62,6 +62,7 @@ dnf5 remove -y \
   xdg-desktop-portal-kde
 
 dnf5 install -y sddm
+dnf5 install -y qt6-qtwaylandg
 
 dnf5 -y copr disable lionheartp/Hyprland
 dnf5 -y copr disable erikreider/SwayNotificationCenter
